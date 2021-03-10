@@ -65,7 +65,7 @@ const actions = {
 	},
 	/**
 	 * The function that makes the wheel spin and stop.
-	 * @description First we take the strength, which is 2.5-100, times 10, times a randomized number + 2.
+	 * @description First we take the strength, which is 2.5-100, times 10, times a randomized number.
 	 * We use this as the degres the wheel spins. 360 is one full spin.
 	 *
 	 * Then we add CSS transition to the wheel element.
@@ -77,10 +77,10 @@ const actions = {
 	 * Ie: if its 540, we should set it to 180. Because thats the same visually.
 	 * We do this because in the longrun, the deg could be really high, when it really does not need to.
 	 */
-	spin_the_wheel({ commit, getters, dispatch }) {
+	spin_the_wheel({ commit, getters }) {
 		const deg = getters.get_strength * 10 * (Math.random() + 2)
 		commit('set_transition', '6s ease-out')
-		commit('set_degrees', deg)
+		commit('set_degrees', deg || 2.5)
 		commit('set_strength')
 		setTimeout(() => {
 			commit('set_transition', 'none')
