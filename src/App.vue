@@ -7,6 +7,20 @@ import play from './components/play/index.vue'
 </script>
 
 <style lang="scss">
+:root {
+	--white: #f1f1f1;
+	--black: #222;
+	--blue: #2364aa;
+	--red: #d63230;
+	--green: #82d173;
+	--yellow: #ffc857;
+	--orange: #f39237;
+	--sky: #40bcd8;
+	--purple: #5b1865;
+	--pink: #d664be;
+	--sea: #03cea4;
+	--free: #3d8b2d;
+}
 *,
 *:after,
 *:before {

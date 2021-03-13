@@ -73,11 +73,11 @@ export default {
 				position: absolute;
 				background: linear-gradient(
 					220deg,
-					#e81d1d,
-					#e8b71d,
-					#1de840,
-					#2b1de8,
-					#dd00f3
+					var(--red),
+					var(--orange),
+					var(--green),
+					var(--blue),
+					var(--pink)
 				);
 				background-size: 500% 500%;
 				animation: rainbow 30s ease infinite;
