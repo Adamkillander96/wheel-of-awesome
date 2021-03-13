@@ -72,26 +72,19 @@ export default {
 				bottom: 0;
 				position: absolute;
 				background: linear-gradient(
-					180deg,
+					220deg,
 					#e81d1d,
 					#e8b71d,
 					#1de840,
 					#2b1de8,
 					#dd00f3
 				);
-				background-size: 1800% 1800%;
-
-				-webkit-animation: rainbow 30s ease infinite;
-				-z-animation: rainbow 30s ease infinite;
-				-o-animation: rainbow 30s ease infinite;
+				background-size: 500% 500%;
 				animation: rainbow 30s ease infinite;
 			}
 			&.pressed {
 				cursor: progress;
 				&:after {
-					-webkit-animation: rainbow 5s ease infinite;
-					-z-animation: rainbow 5s ease infinite;
-					-o-animation: rainbow 5s ease infinite;
 					animation: rainbow 5s ease infinite;
 				}
 			}
@@ -107,39 +100,6 @@ export default {
 	}
 }
 
-@-webkit-keyframes rainbow {
-	0% {
-		background-position: 0% 82%;
-	}
-	50% {
-		background-position: 100% 19%;
-	}
-	100% {
-		background-position: 0% 82%;
-	}
-}
-@-moz-keyframes rainbow {
-	0% {
-		background-position: 0% 82%;
-	}
-	50% {
-		background-position: 100% 19%;
-	}
-	100% {
-		background-position: 0% 82%;
-	}
-}
-@-o-keyframes rainbow {
-	0% {
-		background-position: 0% 82%;
-	}
-	50% {
-		background-position: 100% 19%;
-	}
-	100% {
-		background-position: 0% 82%;
-	}
-}
 @keyframes rainbow {
 	0% {
 		background-position: 0% 82%;
