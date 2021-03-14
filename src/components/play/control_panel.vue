@@ -1,9 +1,9 @@
 <template>
-	<article class="panel">
+	<section class="panel">
 		<header class="header">
 			<h3>Controls</h3>
 		</header>
-		<section class="section">
+		<div class="section">
 			<div class="group">
 				<button
 					class="button"
@@ -18,8 +18,8 @@
 					<span v-else class="text">Waiting</span>
 				</button>
 			</div>
-		</section>
-	</article>
+		</div>
+	</section>
 </template>
 <script>
 import { mapGetters, mapActions } from 'vuex'
