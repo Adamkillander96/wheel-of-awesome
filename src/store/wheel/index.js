@@ -53,7 +53,7 @@ const actions = {
 				if (getters.get_strength === 100) {
 					return clearInterval(state.hold)
 				}
-				commit('set_strength', { increase: 2.5 })
+				commit('set_strength', { increase: 2 })
 			}, 50)
 		)
 	},
@@ -78,20 +78,27 @@ const actions = {
 	 * We do this because in the longrun, the deg could be really high, when it really does not need to.
 	 */
 	spin_the_wheel({ commit, getters }) {
-		const deg = getters.get_strength * 10 * (Math.random() + 2)
-		commit('set_transition', '6s ease-out')
-		commit('set_degrees', deg || 2.5)
-		commit('set_strength')
-		setTimeout(() => {
-			commit('set_transition', 'none')
+		return new Promise((resolve, reject) => {
+			const deg = getters.get_strength * 10 * (Math.random() + 2)
+			commit('set_transition', '6s ease-out')
+			commit('set_degrees', deg || 2)
+			commit('set_strength')
+			try {
+				setTimeout(() => {
+					commit('set_transition', 'none')
 
-			const remove_the_full_nr = getters.get_degrees / 360
-			const deg_without_the_full_nr = Number(remove_the_full_nr.toFixed(0))
-			const the_decimals = remove_the_full_nr - deg_without_the_full_nr
+					const remove_the_full_nr = getters.get_degrees / 360
+					const deg_without_the_full_nr = Number(remove_the_full_nr.toFixed(0))
+					const the_decimals = remove_the_full_nr - deg_without_the_full_nr
 
-			commit('set_degrees', 360 * the_decimals)
-			commit('set_can_spin', true)
-		}, 6000)
+					commit('set_degrees', 360 * the_decimals)
+					commit('set_can_spin', true)
+					resolve()
+				}, 6000)
+			} catch (err) {
+				reject(err)
+			}
+		})
 	}
 }
 
