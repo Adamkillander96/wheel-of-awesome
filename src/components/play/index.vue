@@ -1,24 +1,24 @@
 <template>
-	<main>
+	<article>
 		<section class="scene">
 			<div class="container">
-				<h2>Spin the wheel!</h2>
 				<wheel
 					class="wheel"
 					:style="`transform:rotate(${get_degrees}deg);transition:${get_transition}`"
-				></wheel>
+				/>
 			</div>
 		</section>
-		<control-panel></control-panel>
-	</main>
+		<control-panel />
+	</article>
 </template>
 <script>
-import wheel from './wheel.vue'
+import wheel from './wheel/index.vue'
 import controlPanel from './control_panel.vue'
 
-import { mapGetters, mapActions } from 'vuex'
+import { mapGetters } from 'vuex'
 
 export default {
+	name: 'Play',
 	components: {
 		wheel,
 		controlPanel
@@ -33,10 +33,11 @@ export default {
 .scene {
 	padding: 3rem;
 	.container {
-		max-width: 900px;
+		max-width: 40rem;
 		margin: 0 auto;
 		padding: 1rem;
 		text-align: center;
+		overflow: hidden;
 	}
 }
 </style>
