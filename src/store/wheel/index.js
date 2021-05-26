@@ -5,6 +5,7 @@ const state = () => ({
 	spin_power: 0,
 	degrees: 0,
 	transition: 'none',
+	message: {},
 	hold: null
 })
 
@@ -14,7 +15,9 @@ const getters = {
 	get_strength: (state) => state.strength,
 	get_spin_power: (state) => state.spin_power,
 	get_degrees: (state) => state.degrees,
-	get_transition: (state) => state.transition
+	get_transition: (state) => state.transition,
+	get_message: (state) => state.message,
+	get_hold: (state) => state.hold
 }
 
 const mutations = {
@@ -33,11 +36,17 @@ const mutations = {
 	set_spin_power(state, power) {
 		return (state.spin_power = power)
 	},
-	set_degrees(state, degrees) {
-		return (state.degrees = degrees)
+	set_degrees(state, { deg, reset }) {
+		if (reset) {
+			return (state.degrees = deg)
+		}
+		return (state.degrees += deg)
 	},
 	set_transition(state, transition) {
 		return (state.transition = transition)
+	},
+	set_message(state, message) {
+		return (state.message = message)
 	},
 	set_hold(state, interval) {
 		return (state.hold = interval)
@@ -45,23 +54,42 @@ const mutations = {
 }
 
 const actions = {
-	press({ commit, state, getters }) {
+	press({ commit, getters }) {
 		commit('set_pressed', true)
 		commit(
 			'set_hold',
 			setInterval(() => {
 				if (getters.get_strength === 100) {
-					return clearInterval(state.hold)
+					return clearInterval(getters.get_hold)
 				}
 				commit('set_strength', { increase: 2 })
 			}, 50)
 		)
 	},
-	release({ commit, state, dispatch }) {
+	release({ commit, dispatch, getters }) {
 		commit('set_can_spin', false)
 		commit('set_pressed', false)
-		clearInterval(state.hold)
-		dispatch('spin_the_wheel')
+		clearInterval(getters.get_hold)
+		dispatch('spin_the_wheel').then(() => {
+			const deg = getters.get_degrees
+			const wedge_index = Number((deg / 15).toFixed(0))
+			const positive_deg = deg > 0
+			let index
+			console.log(wedge_index)
+			if (positive_deg) {
+				index = 25 - wedge_index
+			} else {
+				const make_it_positive = ('' + wedge_index).replace('-', '')
+				index = make_it_positive
+			}
+			console.log(index)
+			const { money, special } = document.querySelector(
+				`.wedge[data-index="${index}"]`
+			).dataset
+			commit('set_message', {
+				text: money || special
+			})
+		})
 	},
 	/**
 	 * The function that makes the wheel spin and stop.
@@ -81,7 +109,7 @@ const actions = {
 		return new Promise((resolve, reject) => {
 			const deg = getters.get_strength * 10 * (Math.random() + 2)
 			commit('set_transition', '6s ease-out')
-			commit('set_degrees', deg || 2)
+			commit('set_degrees', { deg: deg || 2 })
 			commit('set_strength')
 			try {
 				setTimeout(() => {
@@ -91,7 +119,7 @@ const actions = {
 					const deg_without_the_full_nr = Number(remove_the_full_nr.toFixed(0))
 					const the_decimals = remove_the_full_nr - deg_without_the_full_nr
 
-					commit('set_degrees', 360 * the_decimals)
+					commit('set_degrees', { deg: 360 * the_decimals, reset: true })
 					commit('set_can_spin', true)
 					resolve()
 				}, 6000)

@@ -2,6 +2,7 @@
 	<article>
 		<section class="scene">
 			<div class="container">
+				{{ get_message }}
 				<wheel
 					class="wheel"
 					:style="`transform:rotate(${get_degrees}deg);transition:${get_transition}`"
@@ -24,7 +25,7 @@ export default {
 		controlPanel
 	},
 	computed: {
-		...mapGetters('wheel', ['get_degrees', 'get_transition'])
+		...mapGetters('wheel', ['get_degrees', 'get_transition', 'get_message'])
 	}
 }
 </script>

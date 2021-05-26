@@ -17,7 +17,7 @@
 			</g>
 
 			<g class="wedges">
-				<g class="wedge" id="special_1">
+				<g class="wedge">
 					<path
 						class="background"
 						d="M281.519 165.281C273.411 163.11 265.261 162.064 257.246 162.062L257.214 5.80291C280.218 5.79824 299.723 8.34641 321.945 14.2959L281.519 165.281Z"
@@ -35,7 +35,7 @@
 					</text>
 				</g>
 
-				<g class="wedge" id="price_money_1_1">
+				<g class="wedge">
 					<path
 						class="background"
 						d="M304.003 174.628C297.06 170.625 289.503 167.454 281.397 165.284L321.822 14.2987C344.044 20.2481 362.182 27.7714 382.106 39.2695L304.003 174.628Z"
@@ -55,7 +55,7 @@
 					</text>
 				</g>
 
-				<g class="wedge" id="price_money_1_2">
+				<g class="wedge">
 					<path
 						class="background"
 						d="M323.471 189.537C317.801 183.874 311.322 178.855 304.054 174.66L382.18 39.2829C402.104 50.781 417.677 62.7422 433.947 79.0055L323.471 189.537Z"
@@ -75,7 +75,7 @@
 					</text>
 				</g>
 
-				<g class="wedge" id="price_money_1_3">
+				<g class="wedge">
 					<path
 						class="background"
 						d="M338.276 208.9C334.264 201.962 329.305 195.437 323.37 189.504L433.872 78.9603C450.142 95.2235 462.088 110.808 473.594 130.728L338.276 208.9Z"
@@ -95,7 +95,7 @@
 					</text>
 				</g>
 
-				<g class="wedge" id="price_money_1_4">
+				<g class="wedge">
 					<path
 						class="background"
 						d="M347.581 231.39C345.503 223.65 342.401 216.064 338.204 208.797L473.551 130.619C485.058 150.539 492.563 168.684 498.521 190.904L347.581 231.39Z"
@@ -115,7 +115,7 @@
 					</text>
 				</g>
 
-				<g class="wedge" id="price_money_1_5">
+				<g class="wedge">
 					<path
 						class="background"
 						d="M350.916 255.469C350.911 247.455 349.879 239.324 347.705 231.218L498.675 190.736C504.633 212.955 507.187 232.424 507.191 255.429L350.916 255.469Z"
@@ -135,7 +135,7 @@
 					</text>
 				</g>
 
-				<g class="wedge" id="special_2">
+				<g class="wedge">
 					<path
 						class="background"
 						d="M347.693 279.891C349.865 271.783 350.913 263.633 350.916 255.618L507.175 255.612C507.176 278.616 504.625 298.12 498.672 320.341L347.693 279.891Z"
@@ -153,7 +153,7 @@
 					</text>
 				</g>
 
-				<g class="wedge" id="price_money_2_1">
+				<g class="wedge">
 					<path
 						class="background"
 						d="M338.494 302.414C342.498 295.472 345.67 287.915 347.842 279.809L498.82 320.26C492.867 342.481 485.341 360.617 473.84 380.54L338.494 302.414Z"
@@ -173,7 +173,7 @@
 					</text>
 				</g>
 
-				<g class="wedge" id="price_money_2_2">
+				<g class="wedge">
 					<path
 						class="background"
 						d="M323.716 321.959C329.381 316.29 334.401 309.812 338.596 302.544L473.961 380.692C462.459 400.615 450.496 416.185 434.23 432.452L323.716 321.959Z"
@@ -193,7 +193,7 @@
 					</text>
 				</g>
 
-				<g class="wedge" id="price_money_2_3">
+				<g class="wedge">
 					<path
 						class="background"
 						d="M304.464 336.875C311.402 332.865 317.928 327.907 323.862 321.973L434.388 432.493C418.122 448.76 402.536 460.703 382.614 472.206L304.464 336.875Z"
@@ -213,7 +213,7 @@
 					</text>
 				</g>
 
-				<g class="wedge" id="price_money_2_4">
+				<g class="wedge">
 					<path
 						class="background"
 						d="M282.052 346.31C289.793 344.232 297.379 341.132 304.647 336.936L382.802 472.296C362.88 483.799 344.734 491.302 322.513 497.256L282.052 346.31Z"
@@ -233,7 +233,7 @@
 					</text>
 				</g>
 
-				<g class="wedge" id="price_money_2_5">
+				<g class="wedge">
 					<path
 						class="background"
 						d="M258.014 349.793C266.028 349.789 274.159 348.758 282.265 346.586L322.723 497.562C300.502 503.517 281.033 506.067 258.028 506.068L258.014 349.793Z"
@@ -253,7 +253,7 @@
 					</text>
 				</g>
 
-				<g class="wedge" id="special_3">
+				<g class="wedge">
 					<path
 						class="background"
 						d="M233.617 346.758C241.725 348.928 249.875 349.975 257.89 349.976L257.922 506.235C234.918 506.24 215.413 503.692 193.191 497.742L233.617 346.758Z"
@@ -271,7 +271,7 @@
 					</text>
 				</g>
 
-				<g class="wedge" id="price_money_3_1">
+				<g class="wedge">
 					<path
 						class="background"
 						d="M211.133 337.41C218.076 341.413 225.633 344.584 233.739 346.755L193.314 497.74C171.092 491.79 152.954 484.267 133.03 472.769L211.133 337.41Z"
@@ -291,7 +291,7 @@
 					</text>
 				</g>
 
-				<g class="wedge" id="price_money_3_2">
+				<g class="wedge">
 					<path
 						class="background"
 						d="M191.665 322.501C197.335 328.165 203.814 333.184 211.083 337.378L132.957 472.755C113.032 461.257 97.4595 449.296 81.1897 433.033L191.665 322.501Z"
@@ -311,7 +311,7 @@
 					</text>
 				</g>
 
-				<g class="wedge" id="price_money_3_3">
+				<g class="wedge">
 					<path
 						class="background"
 						d="M176.861 303.138C180.872 310.076 185.831 316.601 191.766 322.534L81.2641 433.078C64.9942 416.815 53.0483 401.23 41.5421 381.31L176.861 303.138Z"
@@ -331,7 +331,7 @@
 					</text>
 				</g>
 
-				<g class="wedge" id="price_money_3_4">
+				<g class="wedge">
 					<path
 						class="background"
 						d="M167.555 280.649C169.633 288.389 172.735 295.975 176.933 303.242L41.5846 381.419C30.0784 361.499 22.573 343.354 16.6145 321.135L167.555 280.649Z"
@@ -351,7 +351,7 @@
 					</text>
 				</g>
 
-				<g class="wedge" id="price_money_3_5">
+				<g class="wedge">
 					<path
 						class="background"
 						d="M164.22 256.569C164.225 264.583 165.257 272.713 167.431 280.819L16.4611 321.302C10.5026 299.083 7.94924 279.613 7.94456 256.609L164.22 256.569Z"
@@ -371,7 +371,7 @@
 					</text>
 				</g>
 
-				<g class="wedge" id="special_4">
+				<g class="wedge">
 					<path
 						class="background"
 						d="M167.443 232.148C165.271 240.255 164.223 248.405 164.22 256.42L7.96074 256.426C7.95985 233.422 10.5112 213.918 16.4643 191.697L167.443 232.148Z"
@@ -389,7 +389,7 @@
 					</text>
 				</g>
 
-				<g class="wedge" id="price_money_4_1">
+				<g class="wedge">
 					<path
 						class="background"
 						d="M176.642 209.624C172.638 216.566 169.466 224.122 167.294 232.229L16.3156 191.778C22.2687 169.557 29.7949 151.421 41.2964 131.498L176.642 209.624Z"
@@ -409,7 +409,7 @@
 					</text>
 				</g>
 
-				<g class="wedge" id="price_money_4_2">
+				<g class="wedge">
 					<path
 						class="background"
 						d="M191.42 190.078C185.755 195.748 180.735 202.226 176.539 209.494L41.175 131.345C52.6764 111.423 64.6402 95.8523 80.9062 79.5851L191.42 190.078Z"
@@ -429,7 +429,7 @@
 					</text>
 				</g>
 
-				<g class="wedge" id="price_money_4_3">
+				<g class="wedge">
 					<path
 						class="background"
 						d="M210.672 175.162C203.734 179.172 197.208 184.13 191.274 190.065L80.7483 79.5443C97.0142 63.277 112.6 51.3338 132.522 39.8308L210.672 175.162Z"
@@ -449,7 +449,7 @@
 					</text>
 				</g>
 
-				<g class="wedge" id="price_money_4_4">
+				<g class="wedge">
 					<path
 						class="background"
 						d="M233.083 165.727C225.343 167.805 217.756 170.905 210.489 175.101L132.334 39.7407C152.256 28.2377 170.402 20.7354 192.622 14.7805L233.083 165.727Z"
@@ -469,7 +469,7 @@
 					</text>
 				</g>
 
-				<g class="wedge" id="price_money_4_5">
+				<g class="wedge">
 					<path
 						class="background"
 						d="M257.122 162.244C249.108 162.247 240.977 163.278 232.871 165.451L192.413 14.4745C214.634 8.51959 234.103 5.96943 257.108 5.96854L257.122 162.244Z"
@@ -507,13 +507,22 @@ export default {
 	}),
 	mounted() {
 		const { wedges } = this.wheel
-		wedges.forEach(({ name, type, amount, text = '' }, index) => {
-			const wedge = document.querySelector('.wedges').children[index]
+		let total_deg = 0
+		wedges.forEach(({ name, type, amount, text = '' }, i) => {
+			const wedge = document.querySelector('.wedges').children[i]
+			wedge.id = `${name}_${type}`
+			wedge.dataset.index = i += 1
+			wedge.dataset[amount ? 'money' : 'special'] = amount || type
+			wedge.dataset.deg_start = total_deg
+			total_deg += 15
+			wedge.dataset.deg_end = total_deg
+
 			if (text) {
-				wedge.dataset.special = type
 				wedge.querySelector('.word').innerHTML = text
 				return
 			}
+			wedge.id += `_${i}`
+
 			const price = amount + ''
 			price.split('').forEach((number, index) => {
 				const css_index = (index += 1)
